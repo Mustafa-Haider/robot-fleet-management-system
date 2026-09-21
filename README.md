@@ -157,51 +157,10 @@ Encapsulation - Robot state is held on the instance and persisted through a
 
 
 --------------------------------------------------------------------------------
-KNOWN ISSUES AND ROADMAP
---------------------------------------------------------------------------------
-
-Known issues:
-  * Locations are entered as free text when adding a robot, but the move
-    operation expects numeric "x, y" coordinates. These two formats should
-    be unified.
-  * Robot IDs are not checked for uniqueness, so duplicates are possible.
-  * Validation messages are printed to the console and are not visible in
-    the Streamlit interface.
-
-Planned improvements:
-  * A "View All Robots" table listing the whole fleet at once
-  * Search and filter by status, battery level, or location
-  * Duplicate-ID prevention on add
-  * Edit an existing robot's attributes
-  * Export the fleet to CSV
-  * Unit tests
-
-
---------------------------------------------------------------------------------
-CONTRIBUTING
---------------------------------------------------------------------------------
-
-Contributions are welcome.
-
-    1. Fork the repository
-    2. Create a branch:   git checkout -b feature/your-feature-name
-    3. Commit changes:    git commit -m "Add your feature"
-    4. Push the branch:   git push origin feature/your-feature-name
-    5. Open a Pull Request
-
-
---------------------------------------------------------------------------------
-LICENSE
---------------------------------------------------------------------------------
-
-Released under the MIT License. See the LICENSE file for details.
-
-
---------------------------------------------------------------------------------
 AUTHOR
 --------------------------------------------------------------------------------
 
-Your Name
-GitHub: https://github.com/YOUR-USERNAME
+Syed Mustafa Haider Rizvi
+GitHub: https://github.com/Mustafa-Haider
 
 ================================================================================
