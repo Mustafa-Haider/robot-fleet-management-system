@@ -350,14 +350,15 @@ class GroundRobot(Robot):
     def disp_info(self, robot_id):
         for robot in data["GroundRobot"]:
             if robot["id"] == robot_id:
-                return True, f'''ID: {robot['id']} \n 
-                        Name: {robot['name']}\n
-                Battery Level: {robot['battery']}\n
-                Status: {robot['status']}\n
-                Location: {robot['location']})\n
-                Wheel Count: {robot['wheel_count']}\n
-                Terrain Type: {robot['terrain']}\n
-                Payload Capacity: {robot['payload_capacity']}'''
+                return True, f'''
+ID: {robot['id']} \n 
+Name: {robot['name']}\n
+Battery Level: {robot['battery']}\n
+Status: {robot['status']}\n
+Location: {robot['location']})\n
+Wheel Count: {robot['wheel_count']}\n
+Terrain Type: {robot['terrain']}\n
+Payload Capacity: {robot['payload_capacity']}'''
         return False, f"No Ground Robot found with ID {robot_id}."
 
 
@@ -440,14 +441,15 @@ class Drone(Robot):
     def disp_info(self, robot_id):
         for robot in data["Drone"]:
             if robot["id"] == robot_id:
-                return True, f'''ID: {robot['id']} \n 
-                        Name: {robot['name']}\n
-                        Battery Level: {robot['battery']}\n
-                        Status: {robot['status']}\n
-                        Location: {robot['location']})\n
-                        Maximum Altitude: {robot['maximum_altitude']}\n
-                        Flight Time: {robot['flight_time']}\n
-                        GPS Status: {robot['gps_status']}'''
+                return True, f'''
+ID: {robot['id']} \n 
+Name: {robot['name']}\n
+Battery Level: {robot['battery']}\n
+Status: {robot['status']}\n
+Location: {robot['location']})\n
+Maximum Altitude: {robot['maximum_altitude']}\n
+Flight Time: {robot['flight_time']}\n
+                GPS Status: {robot['gps_status']}'''
         return False, f"No Drone found with ID {robot_id}."
 
 
@@ -533,14 +535,15 @@ class HumanoidRobot(Robot):
     def disp_info(self, robot_id):
         for robot in data["HumanoidRobot"]:
             if robot["id"] == robot_id:
-                return True, f'''ID: {robot['id']} \n 
-                        Name: {robot['name']}\n
-                        Battery Level: {robot['battery']}\n
-                        Status: {robot['status']}\n
-                        Location: {robot['location']})\n
-                        Joint Count: {robot['joint_count']}\n
-                        Walking Status: {robot['walking_status']}\n
-                        Payload Capacity: {robot['payload_capacity']}'''
+                return True, f'''
+    ID: {robot['id']} \n 
+    Name: {robot['name']}\n
+    Battery Level: {robot['battery']}\n
+    Status: {robot['status']}\n
+    Location: {robot['location']})\n
+    Joint Count: {robot['joint_count']}\n
+    Walking Status: {robot['walking_status']}\n
+    Payload Capacity: {robot['payload_capacity']}'''
         return False, f"No Humanoid Robot found with ID {robot_id}."
 
 
